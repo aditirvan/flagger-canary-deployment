@@ -28,7 +28,6 @@ jobs:
           context: ./sample-app/v1-works
           push: true
           tags: aditirvan/canary-app:v1-works
-          platforms: linux/amd64,linux/arm64,darwin/arm64
 
   build-v2:
     if: contains(github.event.head_commit.message, 'v2-chaos') || 
@@ -50,7 +49,6 @@ jobs:
           context: ./sample-app/v2-chaos
           push: true
           tags: aditirvan/canary-app:v2-chaos
-          platforms: linux/amd64,linux/arm64,darwin/arm64
 
   build-v3:
     if: contains(github.event.head_commit.message, 'v3-works') || 
@@ -72,4 +70,3 @@ jobs:
           context: ./sample-app/v3-works
           push: true
           tags: aditirvan/canary-app:v3-works
-          platforms: linux/amd64,linux/arm64,darwin/arm64
