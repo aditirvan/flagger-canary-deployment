@@ -8,5 +8,3 @@ WORKDIR /app
 COPY --from=builder /app/myapp .
 EXPOSE 8000
 ENTRYPOINT ["./myapp"]
-
-
