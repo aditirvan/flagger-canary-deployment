@@ -28,6 +28,7 @@ jobs:
           context: ./sample-app/v1-works
           push: true
           tags: aditirvan/canary-app:v1-works
+          platforms: linux/amd64,linux/arm64
 
   build-v2:
     if: contains(github.event.head_commit.message, 'v2-chaos') || 
