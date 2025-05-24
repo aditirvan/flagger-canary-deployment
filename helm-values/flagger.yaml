@@ -1,0 +1,2 @@
+meshProvider: nginx
+metricsServer: http://prom-stack-kube-prometheus-prometheus.monitoring:9090
