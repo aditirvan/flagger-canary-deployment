@@ -72,3 +72,4 @@ jobs:
           context: ./sample-app/v3-works
           push: true
           tags: aditirvan/canary-app:v3-works
+          platforms: linux/amd64,linux/arm64
